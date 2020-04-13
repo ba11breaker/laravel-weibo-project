@@ -11,7 +11,7 @@
             Everything will be changed.
         </p>
         <p>
-            <a class="btn btn-lg btn-success" href="#" role="button">Login now</a>
+        <a class="btn btn-lg btn-success" href="{{ route('signup') }}" role="button">Login now</a>
         </p>
     </div>
 @stop
