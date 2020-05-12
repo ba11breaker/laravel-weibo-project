@@ -25,4 +25,12 @@ class StatusesController extends Controller
         session()->flash('success', 'Publish Successfully!');
         return redirect()->back();
     }
+
+    public function destroy(Status $status)
+    {
+        $this->authorize('destroy', $status);
+        $status->delete();
+        session()->flash('success', 'Delete weibo successfully!');
+        return redirect()->back();
+    }
 }
